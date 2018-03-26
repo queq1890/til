@@ -1,4 +1,4 @@
-class CountUpWirker
+class CountUpWorker
   include Sidekiq::Worker
   DURATION = 30
   
@@ -10,6 +10,6 @@ class CountUpWirker
 	  start_num += 1
       sleep 1
     end
-    logger.close:wq
+    logger.close
   end
 end
